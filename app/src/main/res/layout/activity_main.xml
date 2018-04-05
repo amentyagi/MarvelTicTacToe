@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    tools:context="com.anuntah.marvel_tictactoe.Start_screen">
+
+
+    <ImageView
+        android:id="@+id/marvel_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/marvel_logo_" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/marvel_logo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/main_bg"
+            android:foregroundGravity="center"
+            app:cardBackgroundColor="#A00000"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            tools:ignore="UnknownId"
+            xml:cardview="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/round_edit_text"
+                            android:gravity="center"
+                            android:maxLength="20"
+                            android:hint="Enter Player 1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/darker_gray" />
+
+
+                        <EditText
+                            android:maxLength="20"
+                            android:id="@+id/edt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/round_edit_text"
+                            android:gravity="center"
+                            android:hint="Enter Player 2"
+                            android:padding="10dp"
+                            android:textColor="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/avatar1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_edit_text"
+                            android:text="Avatar 1"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/holo_red_dark" />
+
+                        <Button
+                            android:id="@+id/avatar2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_edit_text"
+                            android:text="Avatar 2"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/holo_red_dark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <RadioGroup
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            <RadioButton
+                                android:button="@android:color/transparent"
+                                android:id="@+id/rd1"
+                                android:layout_marginTop="6dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="60dp"
+                                android:onClick="radioButtonClicked"
+                                android:background="@drawable/selector" />
+
+                            <RadioButton
+                                android:button="@android:color/transparent"
+                                android:id="@+id/rd2"
+                                android:layout_marginTop="7dp"
+                                android:layout_width="51dp"
+                                android:layout_height="48dp"
+                                android:onClick="radioButtonClicked"
+                                android:background="@drawable/selector_flash" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1">
+
+                            <RadioGroup
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            <RadioButton
+                                android:onClick="radioButtonClickedDc"
+                                android:button="@android:color/transparent"
+                                android:id="@+id/rd3"
+                                android:layout_marginTop="6dp"
+                                android:layout_width="53dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/selector_im" />
+
+                            <RadioButton
+                                android:onClick="radioButtonClickedDc"
+                                android:button="@android:color/transparent"
+                                android:id="@+id/rd4"
+                                android:layout_marginTop="6dp"
+                                android:layout_width="50dp"
+                                android:layout_height="44dp"
+                                android:background="@drawable/selector_wol" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_edit_text"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="LET'S BATTLE !"
+                        android:textColor="@android:color/holo_red_dark" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

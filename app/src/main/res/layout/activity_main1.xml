@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme2"
+    tools:context="com.anuntah.marvel_tictactoe.MainActivity">
+
+    <LinearLayout
+        android:layout_margin="25dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner_button_red"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+    </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ffff00"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40sp"
+            android:id="@+id/tvWinner"
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp">
+            <Button
+                android:onClick="reset"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_corner_button_red"
+                android:layout_marginStart="25dp"
+                android:id="@+id/btn2"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battle Again"
+                android:layout_gravity="center_horizontal"
+                />
+            <Button
+                android:onClick="home"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_corner_button_red"
+                android:layout_marginStart="15dp"
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                />
+            <Button
+                android:onClick="records"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_corner_button_red"
+                android:layout_marginStart="15dp"
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Records"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+</LinearLayout>
