@@ -78,16 +78,16 @@ public class MainActivity extends AppCompatActivity implements android.view.View
 
     private void setIcon() {
         if(size==3){
-            cid=R.drawable.ca;
-            fid=R.drawable.flash;
-            iid=R.drawable.im;
-            wid=R.drawable.wol;
+            cid=R.drawable.ca_o;
+            fid=R.drawable.flash_o;
+            iid=R.drawable.im_o;
+            wid=R.drawable.wol_o;
         }
         if(size==4){
-            cid=R.drawable.ca_4;
-            fid=R.drawable.flash_4;
-            iid=R.drawable.im_4;
-            wid=R.drawable.wol_4;
+            cid=R.drawable.ca_41;
+            fid=R.drawable.flash_41;
+            iid=R.drawable.im_41;
+            wid=R.drawable.wol_41;
         }
         if(size==5){
 
